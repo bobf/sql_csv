@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.bindir        = 'bin'
-  spec.executables   = []
+  spec.executables   = ['sql_csv']
   spec.require_paths = ['lib']
   spec.add_runtime_dependency 'activerecord', '~> 6.1'
   spec.add_runtime_dependency 'mysql2', '~> 0.5.3'
