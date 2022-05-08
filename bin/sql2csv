@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'bundler/setup'
 require 'sql_csv'
 
 query = ARGV.size.positive? ? ARGV[0] : $stdin.read

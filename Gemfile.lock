@@ -6,7 +6,7 @@ PATH
       mysql2 (~> 0.5.3)
 
 GEM
-  remote: https://rubygems.homeflow.co.uk/
+  remote: https://rubygems.org/
   specs:
     activemodel (6.1.5)
       activesupport (= 6.1.5)
