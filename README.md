@@ -20,10 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
+An executable `sql2csv` is installed with the gem.
+
 Write an SQL command to `stdin` and set `DATABASE_URL` to configure connection. CSV output will be written to `stdout`.
 
 ```bash
-echo "select * from users" | DATABASE_URL='postgresql://user:password@host:1234/database' sql_csv > users.csv
+echo "select * from users" | DATABASE_URL='postgresql://user:password@host:1234/database' sql2csv > users.csv
 ```
 
 ## License
