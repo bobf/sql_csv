@@ -14,7 +14,9 @@ module SqlCsv
     rows = ActiveRecord::Base.connection.execute(query)
     csv = CSV.new($stdout)
     csv << rows.fields
-    rows.each { |row| csv << row.map { |item| item.is_a?(String) ? item : item.to_s } }
+    rows.map { |row| row.is_a?(Hash) ? row.values : row }.each do |row|
+      csv << row.map { |item| item.is_a?(String) ? item : item.to_s }
+    end
     csv.close
   end
 end
