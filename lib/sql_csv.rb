@@ -2,8 +2,10 @@
 
 require 'sql_csv/version'
 
-require 'active_record'
 require 'csv'
+require 'logger'
+
+require 'active_record'
 
 # Create a CSV export from an SQL query.
 module SqlCsv
